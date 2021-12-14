@@ -2,8 +2,7 @@
 /*
 Burgundy: 76323f
 HKUST blue: #003366 
-HKUST background light: #f3f3f3
-Green: #1e747c */
+HKUST background light: #f3f3f3*/
 
 
 
@@ -25,16 +24,15 @@ Green: #1e747c */
 	font-size: 18px;
 }
 
-.jumbotron {
-margin: 0px!important;
-}
 
-.carousel-caption {
-	position: relative;
-    left: auto;
-    right: auto;
-    color: black;
-    padding-top: 3rem;
+.carousel {
+  max-height: 768px;
+  overflow: hidden;
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .section-header {
@@ -69,7 +67,33 @@ margin: 0px!important;
     margin:0;
 }
 
+.ust-logo {
+	border-right: true;
+	border-right-color: white;
+	border-right-width: 5px;
+}
+
+
+
+
+.banner {
+	background-color: var(--contrast);
+	background-image: var(--bs-gradient);
+}
+
 .bg-contrast-color {
 	background-color: var(--contrast);
 }
 
+@media (min-width: 768px) {
+  .make-it-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-item-1 { order: 1; }
+  .flex-item-2 { order: 2; }
+  .flex-item-3 { order: 3; }
+  .flex-item-4 { order: 4; }
+  .flex-item-5 { order: 5; }
+  .flex-item-6 { order: 6; }
+}
