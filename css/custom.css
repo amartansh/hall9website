@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+Burgundy: 76323f
+HKUST blue: #003366 
+HKUST background light: #f3f3f3*/
+
+
+
+:root {
+  --theme: #003366;
+  --contrast: #f3f3f3;
+}
+
+.navbar {
+	background-color: var(--theme);
+}
+
+.footer {
+	background-color: var(--theme);
+}
+
+.nav-link {
+	color: white;
+	font-size: 18px;
+}
+
+
+.carousel {
+  max-height: 768px;
+  overflow: hidden;
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.section-header {
+	color: var(--theme);
+}
+
+.btn-primary {
+	background-color: var(--theme);
+	border-color: var(--theme);
+}
+
+.bg-image .mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color:#fff;
+}
+
+.bg-image .mask .text{
+    height: 100%;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+
+.bg-image .mask .text p{
+    margin:0;
+}
+
+.ust-logo {
+	border-right: true;
+	border-right-color: white;
+	border-right-width: 5px;
+}
+
+
+
+
+.banner {
+	background-color: var(--contrast);
+	background-image: var(--bs-gradient);
+}
+
+.bg-contrast-color {
+	background-color: var(--contrast);
+}
+
+@media (min-width: 768px) {
+  .make-it-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-item-1 { order: 1; }
+  .flex-item-2 { order: 2; }
+  .flex-item-3 { order: 3; }
+  .flex-item-4 { order: 4; }
+  .flex-item-5 { order: 5; }
+  .flex-item-6 { order: 6; }
+}
