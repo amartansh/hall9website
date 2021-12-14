@@ -2,12 +2,13 @@
 /*
 Burgundy: 76323f
 HKUST blue: #003366 
-HKUST background light: #f3f3f3*/
+HKUST background light: #f3f3f3
+Green: #1e747c */
 
 
 
 :root {
-  --theme: #003366;
+  --theme: #1e747c;
   --contrast: #f3f3f3;
 }
 
